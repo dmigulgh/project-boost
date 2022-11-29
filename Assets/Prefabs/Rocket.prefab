@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 2417659091325209312}
   - component: {fileID: 5633136846162839338}
   - component: {fileID: 7310624839111631114}
+  - component: {fileID: 20844816}
+  - component: {fileID: 20844817}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6cb014a9f2ddfbd46a715957e4631e06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +98,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.47
-  m_Height: 2.2
+  m_Height: 2.05
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!54 &7310624839111631114
@@ -107,7 +109,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710273887920743422}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -115,3 +117,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
+--- !u!114 &20844816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710273887920743422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aac7157f212b4049be7f987ee5d5190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainThrust: 50
+  rotationThrust: 100
+--- !u!114 &20844817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710273887920743422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8fccadc0a433a240ad4b192930aec65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
