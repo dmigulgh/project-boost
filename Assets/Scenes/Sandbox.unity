@@ -407,6 +407,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!198 &1108963766 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3043476978249415635, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+  m_PrefabInstance: {fileID: 5853506559308474767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &1339868321 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7476453420602510113, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
@@ -967,10 +972,18 @@ PrefabInstance:
       propertyPath: mainEngineProcess
       value: 
       objectReference: {fileID: 8300000, guid: b6ab3aeef787f2c4f910dfdea368459d, type: 3}
+    - target: {fileID: 20844816, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: mainEngineParticles
+      value: 
+      objectReference: {fileID: 1108963766}
     - target: {fileID: 20844817, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
       propertyPath: crashParticles
       value: 
       objectReference: {fileID: 758588106}
+    - target: {fileID: 20844817, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: levelLoadDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 20844817, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
       propertyPath: successParticles
       value: 
@@ -978,6 +991,22 @@ PrefabInstance:
     - target: {fileID: 1710273887920743422, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923641101323973019, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923641101323973019, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923641101323973019, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923641101323973019, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3992574003855956705, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
       propertyPath: m_RootOrder
@@ -1021,6 +1050,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3992574003855956705, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633136846162839338, guid: bff94dac58fb84f4b8cfafd39b7c9e8c, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

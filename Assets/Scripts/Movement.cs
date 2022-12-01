@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float rotationThrust = 50f;
     [SerializeField] AudioClip mainEngineProcess;
     [SerializeField] AudioClip RCSEngine;
+    [SerializeField] ParticleSystem mainEngineParticles;
     
 
     AudioSource audioSource;
@@ -36,6 +37,14 @@ public class Movement : MonoBehaviour
             //TODO - add thruster particle system
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
             PlayIfNotPlaying(audioSource, mainEnginePlays, mainEngineProcess);
+            if (!mainEngineParticles.isPlaying)
+            {
+                mainEngineParticles.Play();
+            }
+        }
+        else
+        {
+            mainEngineParticles.Stop();
         }
     }
 

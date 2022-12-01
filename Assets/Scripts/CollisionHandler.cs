@@ -45,7 +45,7 @@ public class CollisionHandler : MonoBehaviour
         audioSource.PlayOneShot(crash);
         crashParticles.Play();
         GetComponent<Movement>().enabled = false;
-        ReloadLevel(levelLoadDelay);
+        StartCoroutine(ReloadLevel(levelLoadDelay));
     }
 
     void StartSuccessSequence()
